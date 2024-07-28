@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Luxury Stay</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h2>Welcome to Luxury Stay</h2>
+        <p>Your perfect escape awaits at our premium hotel.</p>
+        <a href="#booking" class="cta-button">Book Your Stay</a>
+    </div>
+</section>
+
+<section id="rooms" class="rooms">
+    <div class="container">
+        <h2>Our Rooms</h2>
+        <div class="room-listing">
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1600585154603-9d9c6d9d9d9c" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Spacious room with a king-sized bed, balcony, and a stunning view.</p>
+                <p class="price">$200 per night</p>
+            </div>
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Suite">
+                <h3>Executive Suite</h3>
+                <p>Luxurious suite with a living area, minibar, and premium amenities.</p>
+                <p class="price">$350 per night</p>
+            </div>
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1618222316241-1c46bff73e34" alt="Standard Room">
+                <h3>Standard Room</h3>
+                <p>Cozy room with all essential comforts for a relaxing stay.</p>
+                <p class="price">$150 per night</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="amenities" class="amenities">
+    <div class="container">
+        <h2>Amenities</h2>
+        <div class="amenities-list">
+            <div class="amenity">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d3" alt="Swimming Pool">
+                <h4>Swimming Pool</h4>
+                <p>Enjoy our outdoor pool with a beautiful view.</p>
+            </div>
+            <div class="amenity">
+                <img src="https://images.unsplash.com/photo-1555992336-03a23d1d3774" alt="Spa">
+                <h4>Spa & Wellness</h4>
+                <p>Relax and rejuvenate at our full-service spa.</p>
+            </div>
+            <div class="amenity">
+                <img src="https://images.unsplash.com/photo-1590595901583-a4a9bb17401a" alt="Gym">
+                <h4>Fitness Center</h4>
+                <p>Stay fit with our state-of-the-art gym facilities.</p>
+            </div>
+            <div class="amenity">
+                <img src="https://images.unsplash.com/photo-1500077423678-25eead374c36" alt="Restaurant">
+                <h4>Restaurant & Bar</h4>
+                <p>Dine in style with exquisite cuisine and cocktails.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonial">
+            <p>"The stay at Luxury Stay was unforgettable. The service was excellent and the amenities were top-notch!"</p>
+            <footer>- Sarah M.</footer>
+        </div>
+        <div class="testimonial">
+            <p>"Beautiful rooms with a stunning view. Highly recommended for a relaxing getaway."</p>
+            <footer>- John D.</footer>
+        </div>
+        <div class="testimonial">
+            <p>"Fantastic experience! The staff was friendly and the facilities were amazing. Will definitely return!"</p>
+            <footer>- Emily R.</footer>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="booking">
+    <div class="container">
+        <h2>Book Your Stay</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room">
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Executive Suite</option>
+                <option value="standard">Standard Room</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <p>Contact us: info@luxurystay.com | Phone: +1 234 567 890</p>
+        <p>Follow us on social media:</p>
+        <div class="social-media">
+            <a href="#"><img src="https://image.similarpng.com/very-thumbnail/2020/05/Facebook-logo-transparent-PNG.png"
+                             alt="Facebook"></a>
+            <a href="#"><img src="https://image.similarpng.com/very-thumbnail/2020/07/Twitter-logo-PNG.png"
+                             alt="Twitter"></a>
+            <a href="#"><img src="https://image.similarpng.com/very-thumbnail/2020/07/Instagram-Logo.png"
+                             alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f8b400;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1499364615650-ec38552f4f34');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    margin-top: 60px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f8b400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e09e00;
+}
+
+.rooms {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.rooms h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.room-listing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.room {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.room img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.room p {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.room .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f8b400;
+}
+
+.amenities {
+    padding: 50px 0;
+}
+
+.amenities h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.amenities-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.amenity {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 22%;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amenity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.amenity img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.amenity h4 {
+    font-size: 1.3em;
+    margin: 20px 0 10px;
+}
+
+.amenity p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.testimonial footer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.booking {
+    padding: 50px 0;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.booking form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking form input,
+.booking form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.booking form button {
+    background-color: #f8b400;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking form button:hover {
+    background-color: #e09e00;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .room-listing,
+    .amenities-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room,
+    .amenity {
+        width: 80%;
+    }
+
+    .booking form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
